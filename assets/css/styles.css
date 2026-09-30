@@ -1780,3 +1780,51 @@ h1 {
   }
 }
 
+/* OTHER SERVICES GRID FIX */
+
+.other-services-list {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.other-services-list span {
+  display: flex;
+  min-height: 66px;
+  padding: 16px 18px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.025);
+  text-align: center;
+  line-height: 1.35;
+}
+
+.other-services-list span:nth-child(-n + 4) {
+  grid-column: span 3;
+}
+
+.other-services-list span:nth-child(n + 5) {
+  grid-column: span 4;
+}
+
+@media (max-width: 1020px) {
+  .other-services-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .other-services-list span,
+  .other-services-list span:nth-child(-n + 4),
+  .other-services-list span:nth-child(n + 5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .other-services-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
