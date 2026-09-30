@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#061019"/><stop offset="1" stop-color="#132834"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g fill="none" stroke="#5CD4FF" stroke-width="9" transform="translate(110 150) scale(2.1)"><path d="M10 18h42L31 76z"/><path d="M33 18h42L54 76z" opacity=".4"/></g>
+  <text x="370" y="286" fill="#F4F8FA" font-size="78" font-weight="700" font-family="Arial,Helvetica,sans-serif" letter-spacing="4">CRISTAL</text>
+  <text x="376" y="340" fill="#8EA8B6" font-size="26" font-weight="600" font-family="Arial,Helvetica,sans-serif" letter-spacing="9">VIDRAÇARIA</text>
+  <text x="110" y="515" fill="#A7BAC5" font-size="30" font-family="Arial,Helvetica,sans-serif">35+ anos • soluções em vidro sob medida</text>
+</svg>

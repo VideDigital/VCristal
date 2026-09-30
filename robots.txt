@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vcristal.com.br/sitemap.xml
