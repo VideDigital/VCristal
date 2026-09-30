@@ -1119,6 +1119,94 @@ h3 {
 }
 
 
+
+
+/* FINAL PROFESSIONAL POLISH */
+
+.hero-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 52px;
+}
+
+h1 {
+  max-width: 620px;
+  font-size: clamp(42px, 4.6vw, 60px);
+  font-weight: 650;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.brand strong {
+  font-size: 16.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand span {
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+}
+
+.site-nav {
+  gap: 34px;
+}
+
+.site-nav a {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.header-whatsapp {
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero-meta {
+  margin-bottom: 22px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.hero-text {
+  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+.hero-info strong {
+  font-size: 16.5px;
+}
+
+.hero-info span {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.section-intro > p:last-child {
+  font-size: 16px;
+}
+
+.service-overlay > span {
+  font-size: 12px;
+}
+
+.image-disclaimer {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.contact-info span {
+  font-size: 11px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+
 @media (max-width: 1020px) {
 
   .site-nav,
