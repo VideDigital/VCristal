@@ -1478,3 +1478,135 @@ h1 {
   }
 
 }
+
+
+/* DESKTOP TYPE SCALE */
+
+@media (min-width: 1021px) {
+  body {
+    font-size: 17px;
+  }
+
+  .header-inner {
+    min-height: 84px;
+  }
+
+  .brand strong {
+    font-size: 18px;
+  }
+
+  .brand span {
+    font-size: 11px;
+  }
+
+  .site-nav a {
+    font-size: 16px;
+  }
+
+  .header-whatsapp {
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+
+  .hero-meta {
+    font-size: 14px;
+  }
+
+  .hero-text {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .button {
+    font-size: 14.5px;
+  }
+
+  .simple-link {
+    font-size: 14.5px;
+  }
+
+  .hero-info strong {
+    font-size: 18px;
+  }
+
+  .hero-info span {
+    font-size: 13.5px;
+  }
+
+  .small-title {
+    font-size: 12.5px;
+  }
+
+  .section-intro > p:last-child {
+    font-size: 17px;
+  }
+
+  .service-overlay p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .service-overlay > span {
+    font-size: 13px;
+  }
+
+  .image-disclaimer {
+    font-size: 12px;
+  }
+
+  .company-years span {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .company-copy > p:not(.small-title) {
+    font-size: 17px;
+  }
+
+  .company-copy .company-lead {
+    font-size: 20px !important;
+  }
+
+  .other-services-list span {
+    font-size: 14.5px;
+  }
+
+  .process-line strong {
+    font-size: 16px;
+  }
+
+  .process-line p {
+    font-size: 14px;
+  }
+
+  .main-cta p {
+    font-size: 18px;
+  }
+
+  .faq-list summary {
+    font-size: 17px;
+  }
+
+  .faq-list details p {
+    font-size: 16px;
+  }
+
+  .contact-info span {
+    font-size: 12px;
+  }
+
+  .contact-info a,
+  .contact-info p {
+    font-size: 17px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .floating-whatsapp {
+    font-size: 13.5px;
+    min-height: 50px;
+    padding: 0 20px;
+  }
+}
