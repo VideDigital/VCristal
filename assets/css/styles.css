@@ -1,15 +1,18 @@
 :root {
-  --bg: #f3f1ec;
-  --white: #ffffff;
+  --bg: #e8e5de;
+  --white: #f7f5f0;
+  --surface: #f1efe9;
+  --surface-soft: #ddd8cf;
 
-  --ink: #171918;
-  --muted: #666c69;
-  --line: #d7d5cf;
+  --ink: #2c3431;
+  --muted: #66706b;
+  --line: #c9c5bc;
 
-  --green: #334b46;
-  --green-dark: #233631;
+  --green: #617b77;
+  --green-dark: #455b57;
+  --deep: #34423f;
 
-  --container: 1240px;
+  --container: 1180px;
 }
 
 
@@ -31,6 +34,11 @@ body {
   color: var(--ink);
 
   font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     Arial,
     Helvetica,
     sans-serif;
@@ -79,13 +87,13 @@ address {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 h1,
 h2,
 h3 {
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
 }
 
 h1 {
@@ -93,19 +101,19 @@ h1 {
 
   margin-bottom: 30px;
 
-  font-size: clamp(52px, 6vw, 88px);
+  font-size: clamp(46px, 5.3vw, 72px);
 
   font-weight: 500;
 
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 h2 {
-  font-size: clamp(38px, 4.5vw, 62px);
+  font-size: clamp(34px, 4vw, 50px);
 
   font-weight: 500;
 
-  line-height: 1.03;
+  line-height: 1.1;
 }
 
 .small-title {
@@ -117,7 +125,7 @@ h2 {
 
   font-weight: 700;
 
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
 }
 
 .skip-link {
@@ -131,7 +139,7 @@ h2 {
 
   padding: 12px;
 
-  background: white;
+  background: var(--surface);
 }
 
 .skip-link:focus {
@@ -148,7 +156,7 @@ h2 {
 
   z-index: 50;
 
-  background: rgba(243, 241, 236, 0.97);
+  background: rgba(232, 229, 222, 0.95);
 
   border-bottom: 1px solid var(--line);
 }
@@ -156,7 +164,7 @@ h2 {
 .header-inner {
   display: flex;
 
-  min-height: 82px;
+  min-height: 76px;
 
   align-items: center;
 
@@ -222,7 +230,7 @@ h2 {
 }
 
 .header-whatsapp:hover {
-  background: var(--ink);
+  background: var(--deep);
 
   color: var(--white);
 }
@@ -246,26 +254,26 @@ h2 {
 
   margin: 6px 0;
 
-  background: var(--ink);
+  background: var(--deep);
 }
 
 
 /* HERO */
 
 .hero {
-  padding: 70px 0 0;
+  padding: 56px 0 0;
 }
 
 .hero-grid {
   display: grid;
 
-  min-height: 650px;
+  min-height: 590px;
 
   grid-template-columns: 0.85fr 1.15fr;
 
   align-items: center;
 
-  gap: 70px;
+  gap: 60px;
 }
 
 .hero-meta {
@@ -317,7 +325,7 @@ h2 {
 }
 
 .button-dark {
-  background: var(--ink);
+  background: var(--deep);
 
   color: white;
 }
@@ -339,7 +347,7 @@ h2 {
 .hero-image {
   position: relative;
 
-  height: 610px;
+  height: 540px;
 
   overflow: hidden;
 }
@@ -350,6 +358,8 @@ h2 {
   height: 100%;
 
   object-fit: cover;
+
+  filter: saturate(0.82) contrast(0.94) brightness(0.96);
 }
 
 .hero-image > span {
@@ -371,7 +381,7 @@ h2 {
 .hero-info {
   display: grid;
 
-  margin-top: 48px;
+  margin-top: 38px;
 
   grid-template-columns: repeat(4, 1fr);
 
@@ -381,7 +391,7 @@ h2 {
 }
 
 .hero-info > div {
-  padding: 28px 25px;
+  padding: 22px 20px;
 
   border-right: 1px solid var(--line);
 }
@@ -417,13 +427,13 @@ h2 {
 .section-intro {
   display: grid;
 
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 
   grid-template-columns: 1fr 0.55fr;
 
   align-items: end;
 
-  gap: 90px;
+  gap: 70px;
 }
 
 .section-intro h2 {
@@ -446,7 +456,7 @@ h2 {
 /* SERVICES */
 
 .services {
-  background: white;
+  background: var(--surface);
 }
 
 .service-showcase {
@@ -454,7 +464,7 @@ h2 {
 
   grid-template-columns: 1.15fr 0.85fr;
 
-  grid-auto-rows: 360px;
+  grid-auto-rows: 330px;
 
   gap: 16px;
 }
@@ -474,11 +484,15 @@ h2 {
 
   object-fit: cover;
 
-  transition: transform 500ms ease;
+  filter: saturate(0.80) contrast(0.94) brightness(0.94);
+
+  transition: transform 500ms ease, filter 300ms ease;
 }
 
 .service-card:hover img {
-  transform: scale(1.015);
+  transform: scale(1.012);
+
+  filter: saturate(0.88) contrast(0.96) brightness(0.96);
 }
 
 .service-large {
@@ -488,7 +502,7 @@ h2 {
 .service-wide {
   grid-column: span 2;
 
-  height: 430px;
+  height: 390px;
 }
 
 .service-card::after {
@@ -502,7 +516,7 @@ h2 {
     linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.72)
+      rgba(35, 45, 42, 0.64)
     );
 }
 
@@ -533,7 +547,7 @@ h2 {
 .service-overlay h3 {
   margin-bottom: 7px;
 
-  font-size: 29px;
+  font-size: 26px;
 
   font-weight: 500;
 }
@@ -576,7 +590,7 @@ h2 {
 
   grid-template-columns: 0.75fr 1.25fr;
 
-  gap: 130px;
+  gap: 105px;
 }
 
 .company-years {
@@ -588,7 +602,7 @@ h2 {
 
   color: var(--green);
 
-  font-size: clamp(110px, 15vw, 190px);
+  font-size: clamp(96px, 13vw, 150px);
 
   font-weight: 400;
 
@@ -643,7 +657,7 @@ h2 {
 .other-services {
   padding: 80px 0;
 
-  background: var(--green-dark);
+  background: var(--deep);
 
   color: white;
 }
@@ -735,7 +749,7 @@ h2 {
 .main-cta {
   padding: 90px 0;
 
-  background: var(--ink);
+  background: var(--deep);
 
   color: white;
 }
@@ -765,7 +779,7 @@ h2 {
 .button-white {
   flex-shrink: 0;
 
-  background: white;
+  background: var(--surface);
 
   color: var(--ink);
 }
@@ -774,7 +788,7 @@ h2 {
 /* FAQ */
 
 .faq {
-  background: white;
+  background: var(--surface);
 }
 
 .faq-grid {
@@ -853,7 +867,7 @@ h2 {
 
   grid-template-columns: 0.85fr 1.15fr;
 
-  gap: 130px;
+  gap: 105px;
 }
 
 .contact-heading h2 {
@@ -901,7 +915,7 @@ h2 {
 .footer {
   padding: 50px 0;
 
-  background: #111312;
+  background: #2f3936;
 
   color: white;
 }
@@ -950,7 +964,7 @@ h2 {
 
   align-items: center;
 
-  background: #166942;
+  background: #3b7458;
 
   color: white;
 
@@ -1067,7 +1081,7 @@ summary:focus-visible {
   }
 
   .section {
-    padding: 78px 0;
+    padding: 70px 0;
   }
 
   .header-inner {
@@ -1079,11 +1093,11 @@ summary:focus-visible {
   }
 
   h1 {
-    font-size: clamp(44px, 13vw, 58px);
+    font-size: clamp(40px, 12vw, 52px);
   }
 
   h2 {
-    font-size: clamp(35px, 10vw, 46px);
+    font-size: clamp(31px, 9vw, 40px);
   }
 
   .hero {
@@ -1105,7 +1119,7 @@ summary:focus-visible {
   }
 
   .hero-image {
-    height: 450px;
+    height: 380px;
   }
 
   .hero-info {
